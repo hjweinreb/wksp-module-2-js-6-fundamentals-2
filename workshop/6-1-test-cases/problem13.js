@@ -10,7 +10,19 @@ let verifyEquals = require('../../assets/verify-equals');
 
 function f(str) {
 
-}
+        let isPalindrome = false;
+
+        const splitString = str.split(""); 
+        const reverseArray = splitString.reverse(); 
+        const backwards = reverseArray.join(""); 
+
+        if (str === backwards){
+            isPalindrome === true;
+            console.log("It's a palindrome!")
+
+        }
+        else console.log("Not a palindrome");
+    }
 
 // Test cases
 let inputs = [];
