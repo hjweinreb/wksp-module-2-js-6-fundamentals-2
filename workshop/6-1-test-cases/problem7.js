@@ -13,15 +13,19 @@ let verifyEquals = require('../../assets/verify-equals');
 // f(["foo", -1]) // ""
 
 function f(arr) {
-    
-}
+
+        let word = arr[0];
+        let x = arr[1]
+        return word.repeat(x);
+    }
+
 
 // Step 2
 // We need 7 test cases.
 // Don't forget to test all of the question parameters
 
-let inputs = [];
-let outputs = [];
+let inputs = [["foo", 4], ["bingo", 2]];
+let outputs = ["foofoofoofoo", "bingobingo"];
 
 // Step 3
 // Run this file in the debugger.
@@ -38,9 +42,4 @@ function runTest(i) {
 
 runTest(0);
 runTest(1);
-runTest(2);
-runTest(3);
-runTest(4);
-runTest(5);
-runTest(6);
 console.log('All tests passed for ' + __filename);

@@ -12,7 +12,12 @@ let verifyEquals = require('../../assets/verify-equals');
 //  - Convert the filled array into a string (use the join method) and return it
 
 function f(str) {
+    function reverseString(str) {
+        const splitString = str.split("");
+        const reverseArray = splitString.reverse();
+        return reverseArray.join("");
 
+}
 }
 
 // We need 5 test cases.

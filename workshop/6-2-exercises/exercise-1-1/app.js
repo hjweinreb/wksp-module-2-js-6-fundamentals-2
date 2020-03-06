@@ -14,3 +14,26 @@
 // Guidelines
 // - write only one event listener
 // - use a switch statement
+
+
+  function whichButton(event){
+      let currentButton = event.target.id;
+        switch (currentButton) {
+          case 'btn-1':
+            document.getElementById("btn-1").style.display = "none";
+          case 'btn-2':
+            document.getElementById("btn-2").style.backgroundColor = "crimson";
+          case 'btn-3':
+            document.getElementById("btn-3").style.backgroundColor = "lightblue";
+          case 'btn-4':
+            document.getElementById("btn-4").className += "jitters";
+          default:
+              return undefined;
+        }
+
+        document.removeEventListener('click', whichButton);
+      
+}
+      
+
+document.addEventListener('click', whichButton);
